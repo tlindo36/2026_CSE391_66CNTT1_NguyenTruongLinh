@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Goals - Landing Page</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        /* Header & Nav */
+        header {
+            background-color: #48c9b0;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            text-align: center;
+            color: white;
+            border-radius: 8px;
+        }
+        .hero-content h1 { font-size: 32px; margin-bottom: 10px; }
+        .hero-content p { font-size: 14px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .hero-content button {
+            background-color: #f1c40f;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        .hero-content button:hover {
+            background-color: #d4ac0d;
+        }
+
+        /* Highlights Section */
+        .highlights {
+            background-color: #e0f7fa;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .highlights h2 {
+            margin-bottom: 30px;
+            color: #333;
+            letter-spacing: 2px;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card p {
+            padding: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Tăng khoảng cách giữa 2 icon */
+        }
+        footer a {
+            color: white;
+            font-size: 28px; /* Chỉnh kích thước icon */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #48c9b0; /* Đổi màu xanh khi di chuột vào icon */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>TRAVEL GOALS</nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>JOE'S TRAVEL PAGE</h1>
+                <p>LET'S EXPLORE THE WORLD TOGETHER</p>
+                <button>Discover places</button>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2>HIGHLIGHTS</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=400&q=80" alt="Miami">
+                    <p>MIAMI, USA</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=400&q=80" alt="Munich">
+                    <p>MUNICH, GERMANY</p>
+                </div>
+                <div class="card">
+                    <img src="https://api.time.com/wp-content/uploads/2023/03/Worlds-Greatest-Places-Barcelona-Spain.jpg" alt="Barcelona">
+                    <p>BARCELONA, SPAIN</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+    </footer>
+
+</body>
+</html>

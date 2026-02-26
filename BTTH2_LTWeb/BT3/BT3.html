@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập 3 - Typography Layout</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace; /* Sử dụng font giống mẫu */
+            background-color: #fff;
+            color: #333;
+            line-height: 1.8;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        /* Container bao quanh có 2 viền xanh mờ 2 bên như trong ảnh */
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            border-left: 2px solid #81d4fa;
+            border-right: 2px solid #81d4fa;
+            padding: 20px 60px;
+        }
+
+        /* Tiêu đề chính ở trên cùng */
+        .main-title {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 60px;
+            font-weight: 400;
+        }
+
+        /* Chia 2 cột */
+        .content-wrapper {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        /* CỘT TRÁI: Dạng Card có đổ bóng */
+        .left-card {
+            flex: 1;
+            background: #fff;
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Hiệu ứng bóng đổ */
+        }
+        .left-card h2 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+        .left-card .card-text {
+            color: #888; /* Chữ màu xám nhạt */
+            font-size: 13px;
+            margin-bottom: 40px;
+        }
+        .author-box .name {
+            font-weight: 700;
+            font-size: 14px;
+            margin: 0 0 8px 0;
+            color: #333;
+        }
+        .author-box .role {
+            font-size: 12px;
+            color: #5c6bc0; /* Chữ màu xanh giống mẫu */
+            margin: 0;
+        }
+
+        /* CỘT PHẢI: 3 đoạn văn bản */
+        .right-column {
+            flex: 1.2;
+            padding-top: 10px;
+        }
+        .right-column p {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        /* Định dạng đoạn văn thứ 2 in đậm */
+        .right-column .bold-text {
+            font-weight: 700;
+            color: #222;
+        }
+
+        /* Responsive cho màn hình nhỏ */
+        @media (max-width: 800px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            .container {
+                padding: 20px;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="main-title">Wireframe Connects the Underlying<br>Conceptual Structure</h1>
+    
+    <div class="content-wrapper">
+        <div class="left-card">
+            <h2>Wireframe Connects the<br>Underlying Conceptual<br>Structure</h2>
+            <p class="card-text">Far far away, behind the word<br>mountains, far from the countries<br>Vokalia and Consonantia, there<br>live the blind texts far from the<br>countries Vokalia and<br>Consonantia, there live the blind<br>texts.</p>
+            
+            <div class="author-box">
+                <p class="name">Louie Jie Mahusay</p>
+                <p class="role">CEO, Founder</p>
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            
+            <p class="bold-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts far from the countries Vokalia and Consonantia, there live the blind texts. far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
