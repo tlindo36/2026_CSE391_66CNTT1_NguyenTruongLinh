@@ -11,7 +11,7 @@
 
     <style>
         body {
-            font-family: 'Roboto Mono', monospace; /* Sử dụng font giống mẫu */
+            font-family: 'Roboto Mono', monospace;
             background-color: #fff;
             color: #333;
             line-height: 1.8;
@@ -20,7 +20,7 @@
             padding: 40px;
         }
 
-        /* Container bao quanh có 2 viền xanh mờ 2 bên như trong ảnh */
+
         .container {
             max-width: 1000px;
             width: 100%;
@@ -29,7 +29,7 @@
             padding: 20px 60px;
         }
 
-        /* Tiêu đề chính ở trên cùng */
+
         .main-title {
             text-align: center;
             font-size: 22px;
@@ -37,20 +37,20 @@
             font-weight: 400;
         }
 
-        /* Chia 2 cột */
+
         .content-wrapper {
             display: flex;
             gap: 50px;
             align-items: flex-start;
         }
 
-        /* CỘT TRÁI: Dạng Card có đổ bóng */
+
         .left-card {
             flex: 1;
             background: #fff;
             padding: 40px;
             border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Hiệu ứng bóng đổ */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
         .left-card h2 {
             font-size: 16px;
@@ -60,7 +60,7 @@
             line-height: 1.6;
         }
         .left-card .card-text {
-            color: #888; /* Chữ màu xám nhạt */
+            color: #888;
             font-size: 13px;
             margin-bottom: 40px;
         }
@@ -72,11 +72,9 @@
         }
         .author-box .role {
             font-size: 12px;
-            color: #5c6bc0; /* Chữ màu xanh giống mẫu */
-            margin: 0;
+            color: #5c6bc0; 
         }
 
-        /* CỘT PHẢI: 3 đoạn văn bản */
         .right-column {
             flex: 1.2;
             padding-top: 10px;
@@ -87,13 +85,12 @@
             margin-bottom: 25px;
             text-align: left;
         }
-        /* Định dạng đoạn văn thứ 2 in đậm */
         .right-column .bold-text {
             font-weight: 700;
             color: #222;
         }
 
-        /* Responsive cho màn hình nhỏ */
+
         @media (max-width: 800px) {
             .content-wrapper {
                 flex-direction: column;
